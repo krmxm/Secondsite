@@ -86,28 +86,30 @@ nav
 	padding: 150px 0 135px 0
 
 	&_header
-		font-size: 60px
-		font-weight: 900
-		text-transform: uppercase
 		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 60px
 		line-height: 60px
-		margin-top: 0
+		margin: 0
 		text-align: center
 
 	&_subheader
-		font-size: 36px
-		font-weight: 900
-		text-transform: uppercase
 		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 36px
 		line-height: 36px
+		margin: 0
 		margin-top: 22px
 		text-align: center
 
 	&_descr
-		font-size: 18px
-		line-height: 24px
-		font-weight: 400
 		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+		text-align: center
 		margin-top: 23px
 
 	&_btn
@@ -128,6 +130,33 @@ nav
 
 .reasons
 	padding: 71px 0 38px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 40px
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		width: 113px
+		height: 113px
+		background-color: #1eacc7
+		border-radius: 100%
+	&_descr
+		width: 341px
+	&_subtitle
+		font-family: Roboto
+		font-size: 17px
+		line-height: 21px
+		font-weight: 400
+		color: #1eacc7
+	&_text
+		font-size: 15px
+		font-weight: 300
+		color: #202020
+		line-height: 21px
 
 .label
 	position: relative
@@ -173,37 +202,7 @@ nav
 		&_world
 			margin: 1px 151px 32px 149px
 
-.reasons .reasons_block
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-top: 40px
 
-	.reasons_round
-		display: flex
-		justify-content: center
-		align-items: center
-		margin-right: 26px
-		width: 113px
-		height: 113px
-		background-color: #1eacc7
-		border-radius: 100%
-
-	.reasons_descr
-		width: 341px
-
-	.reasons_subtitle
-		font-family: Roboto
-		font-size: 17px
-		line-height: 21px
-		font-weight: 400
-		color: #1eacc7
-
-	.reasons_text
-		font-size: 15px
-		font-weight: 300
-		color: #202020
-		line-height: 21px
 
 .mobile
 	min-height: 864px
@@ -231,11 +230,12 @@ nav
 		&_6
 			background: url('../img/mobile/card_6.png') center (center / cover) no-repeat
 		&_subtitle
+			color: #ffffff
 			font-size: 24px
+			font-weight: 400
 			line-height: 31px
-			text-align: center
-			color: #fff
 			text-transform: uppercase
+			text-align: center
 		&_plus
 			display: flex
 			justify-content: center
@@ -253,18 +253,19 @@ nav
 			&::before
 				content: ''
 				display: block
-				width: 14px
-				height: 2px
-				background-color: $main_color
+				width: 14px 
+				height: 2px 
+				background-color: $main-color
 				transition: 0.3s all
 			&::after
 				content: ''
-				position: absolute
+				position: absolute 
 				left: 50%
+				transform: translateX(-50%)
+				display: block 
 				height: 14px
 				width: 2px
-				transform: translateX(-50%)
-				background-color: $main_color
+				background-color: $main-color
 				transition: 0.3s all
 			&:hover
 				&:before, &:after
@@ -274,9 +275,20 @@ nav
 			
 .choice
 	position: relative
-	min-height: 898px
+	min-height: 895px
 	padding: 57px 0 138px 0
 	background: url('../img/choice/choice_bg.png') center (center / cover) no-repeat
+	&_img 
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_descr
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
 	&_black
 		position: absolute 
 		top: 0
@@ -285,18 +297,6 @@ nav
 		width: 100%
 		background-color: #070716
 		z-index: 1
-	&_img
-		position: relative
-		display: block
-		margin: 56px auto 0 auto
-		z-index: 2
-	&_descr
-		position: relative
-		font-size: 17px
-		font-weight: 300
-		line-height: 24px
-		text-align: center
-		color: #222
 		
 .require
 	padding: 68px 0 84px 0
