@@ -43,6 +43,8 @@
             width: 300px
             margin-top: 20px
 @media (max-width: 767px)
+    .title
+        margin-top: 25px
     .menu
         position: fixed
         flex-direction: column
@@ -55,21 +57,12 @@
         padding: 20px 15px
         background-color: rgba(0,0,0, .8)
         transition: 0.6s all
-<<<<<<< HEAD
-        /* &_active
-            left: 0 */
-        &_item
-            padding-right: 0
-            border: none
-            /* margin: 10px */
-=======
         &_active
             left: 0
         &_item
             padding-right: 0
             border: none
             margin: 10px 0
->>>>>>> 80bc288d7375894c564ec2e6be9d3d1dd5b4304b
         &_link
             font-size: 20px
     .hamburger
@@ -100,15 +93,58 @@
         display: none
     .xs-visible
         display: block
-
-
-
-                    
-
-
-
-       
-
-       
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            text-align: center
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &_header
+            line-height: 45px
+@media (max-width: 575px)
+    .subheader
+        height: 60px
+        &_official
+            display: none
+        &_logo
+            margin-top: 16px
+        &_phone
+            margin-top: 11px
+            text-transform: uppercase
+            font-weight: 400
+            font-size: 12px
+        &_btn
+            margin-top: 6px
+            width: 110px
+            height: 22px
+            font-size: 10px
+    .promo
+        min-height: 400px
+        padding: 135px 0 34px 0
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            line-height: 30px
+            margin-top: 33px
+            padding: 0 10px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
 
 
