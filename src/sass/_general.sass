@@ -1,16 +1,4 @@
-$main-color: #1eacc7
-$second-color: #ff5656
-
-=btn_hover 
-	&:hover 
-		background-image: none 
-		background-color: $main-color
-
-*
-	font-family: 'Roboto', sans-serif
-	
-	
-.header
+header
 	position: relative
 	height: 50px
 
@@ -21,10 +9,8 @@ nav
 	background-color: #212121
 	z-index: 5
 
-
-.humburger
+.hamburger
 	display: none
-
 
 .menu
 	display: flex
@@ -33,9 +19,9 @@ nav
 	margin: 0
 	list-style-type: none
 	&_link
-		font-size: 15px
-		font-weight: 300px
 		color: #ffffff
+		font-size: 15px
+		font-weight: 300
 		&:hover
 			text-decoration: none
 			color: $main-color
@@ -76,6 +62,9 @@ nav
 		text-transform: uppercase
 		text-align: right
 		line-height: 12px
+		&:hover
+			text-decoration: none
+			color: #fff
 	&_btn
 		margin-top: 19px
 		width: 172px
@@ -91,10 +80,11 @@ nav
 		text-transform: uppercase
 		+btn_hover
 
+
 .promo
 	min-height: 800px
 	background: url('../img/invitation/uber_bg.png') center (center / cover) no-repeat
-	padding: 218px 0 135px 0
+	padding: 150px 0 135px 0
 	&_header
 		color: #ffffff
 		font-weight: 700
@@ -136,12 +126,12 @@ nav
 		+btn_hover
 
 .reasons
-	padding: 71px 0 38px 0
+	padding: 71px 0 65px 0
 	&_block
 		display: flex
 		justify-content: center
 		align-items: center
-		margin-top: 40px
+		margin-top: 35px
 	&_round
 		display: flex
 		justify-content: center
@@ -149,20 +139,19 @@ nav
 		margin-right: 26px
 		width: 113px
 		height: 113px
-		background-color: #1eacc7
+		background-color: $main-color
 		border-radius: 100%
 	&_descr
-		width: 341px
+		width: 343px
 	&_subtitle
-		font-family: Roboto
-		font-size: 17px
 		line-height: 21px
+		color: $main-color
+		font-size: 17px
 		font-weight: 400
-		color: #1eacc7
 	&_text
+		color: #202020
 		font-size: 15px
 		font-weight: 300
-		color: #202020
 		line-height: 21px
 
 .label
@@ -352,14 +341,17 @@ nav
 	background-color: #080816
 	background: url('../img/world/world.png') center (center / cover) no-repeat
 	&_all
-		display: block
-		position: relative
-		margin: 486px 57px 0 56px
-		font-size: 15px
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 49px
 		text-align: center
+		font-size: 15px
+		font-weight: 400
+		line-height: 68px
 		text-transform: uppercase
 		color: #1fbad6
-		&:hover
+		&:hover 
 			text-decoration: none
 			color: #fff
 footer 
