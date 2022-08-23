@@ -10,6 +10,31 @@
             align-items: flex-start
         &_descr
             width: 300px
+    .mobile
+        &_item
+            width: 280px
+            height: 240px
+            &_subtitle
+                font-size: 20px
+    .require
+        br
+            display: none
+    .footer
+        &_wrapper > div
+            width: 50%
+            &:nth-child(1)
+                width: 25%
+            &:nth-child(3)
+                width: 25%
+                display: flex
+                justify-content: flex-end
+        &_mobile
+            display: flex
+            a
+                margin: 0 3px
+                img
+                    width: 100%
+
 @media (max-width: 991px)
     .menu
         &_item
@@ -165,7 +190,7 @@
             margin-top: 24px
         &_subtitle
             font-size: 16px
-    
+
     .title
         font-size: 15px
         margin-top: 15px
