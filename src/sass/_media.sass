@@ -68,18 +68,16 @@
             margin-top: 20px
     .mobile
         &_item
-<<<<<<< HEAD
             width: 220px
             height: 200px
             &_subtitle
                 display: block
                 position: relative
-                top: 20px
+                top: -20px
                 font-size: 15px
                 line-height: 31px
-=======
-            width: 225px
-            height: 210px
+                width: 225px
+                height: 210px
             &_subtitle
                 font-size: 18px
             &_plus
@@ -93,19 +91,16 @@
     .footer
         &_wrapper
             flex-wrap: wrap
-            &:nth-child(1)
-                width: 25%
-            &:nth-child(3)
-                width: 25%
-                display: flex
-                justify-content: flex-end
-        &_mobile
+        &_wrapper > div
+            width: 100%
             display: flex
-            a
-                margin: 0 3px
-                img
-                    width: 100%0
->>>>>>> 91e2c6e6246892f62d0eb0b0f4f3563793cf9008
+            justify-content: center
+            margin-bottom: 20px
+            &:nth-child(1)
+                width: 100%
+            &:nth-child(3)
+                width: 100%
+                justify-content: center
 @media (max-width: 767px)
     .title
         margin-top: 25px
